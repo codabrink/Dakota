@@ -6,6 +6,9 @@ $(function() {
       $('.cloud').removeClass('high');
       $('#ground').removeClass('low');
       $('#sun').removeClass('low');
+      setTimeout(function() {
+        $('#sun').addClass('setting');
+      }, 3000);
     }, 3000);
   }, 3000);
 });
