@@ -2,6 +2,7 @@ html, body {
   color: #666;
   font-family: sans-serif;
   margin: 0;
+  height: 100%;
 }
 html {
   background: #01325b; /* Old browsers */
