@@ -16,7 +16,7 @@ html {
 
 #stars {
   background-image: url('../img/stars.png');
-  background-size: 15%;
+  background-size: 12%;
   opacity: .2;
   position: fixed;
   top: 0;left: 0;right: 0;bottom: 0;
@@ -33,12 +33,35 @@ html {
   z-index: 4;
 }
 
+#ground {
+  height: 323px;
+  position: fixed;
+  left: 0;
+  bottom: -150px;
+  width: 100%;
+  background-image: url(../img/grass.png);
+  -webkit-transition: bottom 3s ease;
+  z-index: 2;
+}
+
+#sun {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  right: 250px;
+  bottom: 0px;
+  position: fixed;
+  background-color: #fecf6a;
+  z-index: 1;
+  -webkit-transition: bottom 3s ease;
+}
+
 .cloud {
   height: 250px;
   position: fixed;
   left: 0;
   opacity: .5;
-  width: 400%;
+  width: 200%;
   background-image: url(../img/cloud-purple.png);
   -webkit-transition: top 3s ease;
   -webkit-transform: rotate(180deg);
@@ -49,12 +72,12 @@ html {
   position: fixed;
   left: 0;
   opacity: .5;
-  width: 400%;
+  width: 200%;
   background-image: url(../img/cloud-purple.png);
   -webkit-transition: bottom 3s ease;
 }
 .low {
-  bottom: -270px !important;
+  bottom: -350px !important;
 }
 .high {
   top: -270px !important;
