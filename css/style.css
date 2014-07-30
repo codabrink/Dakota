@@ -41,10 +41,23 @@ html {
   width: 400%;
   background-image: url(../img/cloud-purple.png);
   -webkit-transition: top 3s ease;
+  -webkit-transform: rotate(180deg);
+}
+
+.ground-cloud {
+  height: 250px;
+  position: fixed;
+  left: 0;
+  opacity: .5;
+  width: 400%;
+  background-image: url(../img/cloud-purple.png);
   -webkit-transition: bottom 3s ease;
 }
 .low {
   bottom: -270px !important;
+}
+.high {
+  top: -270px !important;
 }
 
 .high {
@@ -79,6 +92,22 @@ html {
   -webkit-animation: float 25s linear infinite;
 }
 
+
+#c4 {
+  top: -120px;
+  z-index: 3;
+  -webkit-animation: float 15s linear infinite;
+}
+#c5 {
+  top: -90px;
+  z-index: 2;
+  -webkit-animation: float 20s linear infinite;
+}
+#c6 {
+  top: -60px;
+  z-index: 1;
+  -webkit-animation: float 25s linear infinite;
+}
 
 @-webkit-keyframes float {
   0% {

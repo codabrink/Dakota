@@ -4,7 +4,10 @@ $(function() {
   //cloud_float($('#c3'), 26000);
 
   setTimeout(function() {
-    $('.cloud').addClass('low');
+    $('.ground-cloud').addClass('low');
+    setTimeout(function() {
+      $('.cloud').removeClass('high');
+    }, 3000);
   }, 3000);
 
 });
