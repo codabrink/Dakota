@@ -1,7 +1,12 @@
 $(function() {
-  cloud_float($('#c1'), 14000);
-  cloud_float($('#c2'), 20000);
-  cloud_float($('#c3'), 26000);
+  //cloud_float($('#c1'), 14000);
+  //cloud_float($('#c2'), 20000);
+  //cloud_float($('#c3'), 26000);
+
+  setTimeout(function() {
+    $('.cloud').addClass('low');
+  }, 3000);
+
 });
 
 
