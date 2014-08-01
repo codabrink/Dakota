@@ -15,8 +15,37 @@ html {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01325b', endColorstr='#ff8a06',GradientType=0 ); /* IE6-9 */
 }
 
+.tree {
+  width: 378px;
+  height: 550px;
+  position: fixed;
+  left: 15%;
+  bottom: 10px;
+  z-index: 2;
+  -webkit-transition: bottom 6s ease;
+  -moz-transition: bottom 6s ease;
+}
+.leaves {
+  background-image: url(../img/leaves.png);
+  background-repeat: no-repeat;
+  width: 378px;
+  height: 337px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.trunk {
+  background-image: url(../img/trunk.png);
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 53px;
+  position: absolute;
+  left: 160px;;
+  bottom: 0;
+}
+
 #stars {
-  background-image: url('../img/stars.png');
+  background-image: url(../img/stars.png);
   background-size: 12%;
   opacity: .2;
   position: fixed;
@@ -95,7 +124,7 @@ html {
   -moz-transition: bottom 3s ease;
 }
 .low {
-  bottom: -350px !important;
+  bottom: -550px !important;
 }
 .high {
   top: -270px !important;

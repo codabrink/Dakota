@@ -8,6 +8,7 @@ $(function() {
       $('#sun').removeClass('low');
       setTimeout(function() {
         $('#sun').addClass('setting');
+        $('.tree').removeClass('low');
       }, 3000);
     }, 3000);
   }, 3000);
